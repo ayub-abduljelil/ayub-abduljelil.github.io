@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background Generator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gradient Background Generator</h1>
+        <p class="description">Pick two colors below to create a custom linear gradient background. The CSS code updates in real-time!</p>
+        <div class="inputs">
+            <input type="color" value="#00ff00" id="input1" name="color1">
+            <input type="color" value="#ff0000" id="input2" name="color2">
+        </div>
+        <h2>Current CSS</h2>
+        <p class="css-display">background: <span id="color_display">linear-gradient(to right, <strong id="color1">#00ff00</strong>, <strong id="color2">#ff0000</strong>);</span></p>
+    </div>
+    <script type="text/javascript" src="script1.js"></script>
+</body>
+</html>

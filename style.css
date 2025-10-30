@@ -1,0 +1,478 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif; }
+h1, h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+#home{
+       background-image: url('img/background.png');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       position: relative;
+       min-height: 80vh;
+       display: flex !important;
+       justify-content: center;
+       align-items: center;
+       color: #FFF;
+       font-size: 2em;
+    .cover{
+    /* Give it size so it's visible and centerable */
+    width: 50%; /* Adjust: e.g., 300px for fixed, or 50% for responsive */
+    height: 200px; /* Adjust: Give it a height; remove if you want auto */
+    min-width: 200px; /* Prevents it from shrinking too small on resize */
+    
+    /* Ensure it flexes and centers within the section */
+    flex: 0 0 auto; /* Keeps its size; doesn't shrink/grow */
+    position: static; /* Overrides any absolute positioning */
+    float: none; /* Overrides any float */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside */
+    text-align: center; /* Centers any future content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    
+    /* Preserve or add transitions if needed */
+    transition: all 0.3s ease; /* Smooth resize behavior */
+}
+}.texta{
+    align-self: flex-start; /* Pushes to top within flex container (equivalent to your 'top') */
+    margin-top: 0vh; /* Keeps your spacing */
+    color: #000000; /* Your black text */
+}
+.textaa{
+    color: #8b5cf6;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0vh;
+  animation: blink 0.7s infinite;
+}
+a:hover{
+    transform: (1.2);
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+p{
+    margin:0px;
+    font-size: 0.6em;
+}
+a{    text-decoration: none; color:  #ffffff;}
+a:hover {
+      color: #f0f0f0; /* Subtle color shift */
+      text-decoration: underline;
+      border-radius: 70px}
+
+.zone {
+    cursor:pointer;
+    display:center;
+    color:#FFF;
+    font-size: 2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    text-align: center;
+    align-content: bottom;
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.sticky{
+    justify-self: center;
+    position:fixed;
+    top: 20px;
+    width: 80%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(102px, 1fr));
+    z-index: 3;
+/*    margin-left: 8rem;
+    margin-right: 8rem;*/
+}
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+.right{
+    grid-column: -2;
+}
+.red{
+    background: -webkit-linear-gradient(top, darkblue 0%,skyblue 0%,#ffffff 10%); /* Chrome10+,Safari5.1+ */
+}
+
+.circle{
+    height: 6%;
+    z-index: 1;
+    border-radius: 200%;
+    align-self: bottom;
+}
+.bluecircle{
+    z-index: 1;
+    width: 50vh;
+    height:50vh;
+    padding-top: 20vh;
+    animation: spin 3s ease-out infinite;
+  }
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  .intro{
+
+  }
+.profile{
+    height : 60vh;
+    width : 35vh;
+    justify-self: center;
+    top: 0;
+    align-self: bottom;
+    transform: translateX(-50%);
+    padding-top: 30vh;
+    position: absolute;
+    z-index: 2;
+}
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 90%,#60abf8 100%,#4096ee 63%); /* W3C */
+    z-index: 2;
+}
+.progrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-items: center;
+}
+img, iframe{
+    width: 100%;
+}
+.image{
+    cursor:pointer;
+    transition: all 0.3s linear;
+    background-color: #444;
+    border-radius:4px;
+    padding: 60px;
+    margin: 15px;
+}
+.image:hover{    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    align-self: bottom;
+    transform: rotate(8deg);
+}
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00c6ff 20%,#141414 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+@media only screen and (max-width: 700px){
+.sticky{
+           grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+           z-index: 3;
+}
+.zone{
+    font-size: 1.5em;
+}
+}
+.about-me {
+    background-color: #d9f1ff; /* soft light blue */
+    color: #1b1b1b;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    padding: 2rem 3rem;
+    border-radius: 18px;
+    max-width: 650px;
+    margin: 3rem auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+    transition: transform 0.3s ease;
+  }
+
+  .about-me:hover {
+    transform: translateY(-4px);
+  }
+
+  .about-me h1 {
+    color: #084c82;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .about-me h2 {
+    color: #0a5d99;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    border-left: 4px solid #0a5d99;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-me em {
+    color: #0b4c7d;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .about-me ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .about-me li {
+    background: #eaf7ff;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.97rem;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .about-me li span {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+  }
+
+  .about-me li:hover {
+    background: #cdeaff;
+    transform: translateX(5px);
+  }
+/*footer*/
+.social-link{
+    display: inline-block;
+    justify-content: center;
+    gap: 2px; /* Space between links */
+    flex-wrap: wrap; /* Wrap on small screens */
+}
+.social-link {
+    display: inline-flex;
+    justify-content: left;
+    justify-self: left;
+    justify-tracks: left;
+    left: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth hover transition */
+    justify-items: left;
+    gap: 5px; /* Space between icon and text */
+}
+.social-link:hover {
+    background-color: #8b5cf6; /* Lighter dark on hover */
+    color: #f0f0f0; /* Subtle color shift */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft glow */
+}
+.social-link .icon {
+    width: 3vh; /* Icon size */
+    height: 3vh;
+    margin-right: 2.5px;
+    padding-top: 0px;
+}
+a{
+    font-size: 0.9rem;
+}
+/* Grid */
+  .progrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    padding: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Card */
+  .progrid .image{
+    position: relative;        /* needed so overlay can be absolute */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: #444;          /* keeps look if image fails */
+    padding: 56px;             /* keeps image centered like your original */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  /* Image behavior */
+  .progrid .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;      /* clicks go to the card */
+    transition: transform 0.25s ease;
+  }
+
+  /* Hover "sick" rotate effect you had */
+  .progrid .image:hover{
+    transform: rotate(-7deg) translateY(-6px);
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  }
+
+  .progrid .image:hover img{
+    transform: scale(1.03);
+  }
+
+  /* Overlay panel (hidden by default) */
+  .proj-overlay{
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    background: linear-gradient(180deg, rgba(10,12,15,0.5), rgba(6,6,8,0.78));
+    color: #e8f4ff;
+    border-radius: 8px;
+    padding: 10px;
+    transform: translateY(70%);
+    opacity: 0;
+    transition: transform 0.22s ease, opacity 0.22s ease;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    font-size: 13px;
+    line-height: 1.35;
+    box-shadow: 0 6px 18px rgba(3,6,12,0.55);
+    border: 1px solid rgba(255,255,255,0.03);
+    pointer-events: none; /* when visible by hover it is not interactive; when pinned we add .pinned class to enable */
+  }
+
+  /* Show overlay on hover */
+  .progrid .image:hover .proj-overlay,
+  .progrid .image:focus-within .proj-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Pinned state: keep overlay visible and interactive */
+  .progrid .image.pinned{
+    transform: none;  /* avoid rotate when pinned */
+  }
+  .progrid .image.pinned img{
+    transform: scale(1.02);
+  }
+  .progrid .image.pinned .proj-overlay{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Overlay internals */
+  .proj-title{ margin:0 0 6px 0; font-weight:800; color: #cfefff; font-size:14px; }
+  .proj-desc { margin:0 0 8px 0; color:#dbeeff; font-size:13px; }
+  .proj-tags { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px; }
+  .proj-tag { background: rgba(0,198,255,0.06); color:#9fefff; padding: 4px 6px; border-radius:6px; font-weight:700; font-size:11px; border:1px solid rgba(0,198,255,0.06); }
+  .proj-links { display:flex; gap:8px; }
+/* GitHub & Live buttons */
+.proj-link {
+  text-decoration: none;
+  background-color: #1f2937;       /* Dark base */
+  color: #fff;                     /* White text */
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.85em;
+  border: 1px solid #0ea5e9;       /* Light blue outline */
+  transition: 0.2s;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+/* Hover effect makes it glow slightly */
+.proj-link:hover {
+  background-color: #0ea5e9;       /* Blue background */
+  color: #fff;
+  box-shadow: 0 0 8px #0ea5e9;     /* Glow */
+}
+
+/* Extra tweak for GitHub link specifically */
+.proj-link[href*="github"]::before {
+  content: "↗ ";                  /* Small GitHub-style emoji */
+  font-size: 1em;
+}
+
+  /* focus style for keyboard users */
+  .progrid .image:focus-within {
+    box-shadow: 0 0 0 4px rgba(0,198,255,0.06);
+    outline: none;
+  }
+
+  /* responsive: slightly shorter cards on small screens */
+  @media (max-width:460px){
+    .progrid .image { height: 200px; padding: 40px; }
+  }
+  .certificates {
+  display: flex;
+  gap: 10px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Updated hover: Apply to the <a> tag for broader hover area, and fix transforms */
+.progrid .image a:hover .certificate-img {
+    transform: scale(1.1) rotate(7deg) translateY(-6px); /* Combined into one transform; reduced scale to 1.1 for subtlety */
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /* Ensure smooth transition */
+}
+
+/* Optional: Adjust the .image container to allow scaling without clipping */
+.progrid .image {
+    /* Add this to prevent overflow issues on hover */
+    overflow: visible; /* Changed from hidden to allow scaled images to show */
+    /* Keep the rest as is */
+}
+
+
+/* Make the certificates div span 4 columns (4x the width of a normal div) */
+.image.certificates {
+    grid-column: span 2; /* Spans 4 grid columns */
+    grid-row: span 2;
+    /* Optional: Adjust height or other styles if needed */
+    min-height: 400px; /* Example: Increase height to match the wider span */
+}

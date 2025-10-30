@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+ <div class="container">
+  <nav class="zone blue sticky"><p><a href="#home" class="nav-link">Home</a></p> 
+    <p><a href="#about" class="nav-link">About</p> <p><a href="#myWorks" class="nav-link">My works</a></p>
+    <p class="right"><a href="#contact" class="nav-link">Contact</a></p></nav>
+  <section id="home" class="red"> <div class="cover"><div class="intro"><h2 class="texta">
+    Hi, I'm <em class="textaa"></em> </h2> </div>
+<img class="bluecircle" src="img/circle.png"> 
+    <img class="profile" src="img/profile.png"> </div></section>
+  <section id="about" class="zone blue">
+    <div class="about-me">
+  <h1>About Me</h1>
+  <p>Hi — I'm Ayub. I'm a hard-working computer student who likes to code, design, and editing videos(more on that later)</p>
+
+  <p>I study computer science at <em>UoG</em> and practice HTML, CSS, and JavaScript and from that i enjoy solving layout and bug problems (I often fix tricky CSS and JavaScript issues). I also edit videos with Adobe Premiere Pro and make short clips for the web.</p>
+
+  <p>I earned a graphic design certificate from California institute of art course called <em>Language of Design: Form and Meaning</em>. That course helped me think about shapes, space, and how content looks on a page.</p>
+
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>HTML, CSS, JavaScript — building interactive pages and fixing layout bugs</li>
+    <li>Git &amp; GitHub — cloning, pulling, and managing code repos</li>
+    <li>Video editing (Premiere Pro) — making clear tutorial clips and social videos</li>
+    <li>Basic graphic design — using design rules to make interfaces easy to read</li>
+    <li>Careful, focused work — I test ideas, fix bugs, and clean up code</li>
+  </ul>
+
+  <h2>School Projects I Can Show</h2>
+  <ul class="projects">
+    <li>Web pages that use DOM scripting and event handling</li>
+    <li>Small site layouts where I solved responsive and positioning problems</li>
+    <li>A GitHub repo with completed exercises I cloned and improved</li>
+  </ul>
+
+</div>
+
+    My works
+
+<div id="myWorks" class="progrid">
+  <div class="image" data-title="Gradient BG generator"
+       data-desc="A simple tool to create custom gradient color backgrounds instantly."
+       data-tags="HTML,CSS,JS"
+       data-github="ayub-abduljelil.github.io/bb"
+       data-live="ayub-abduljelil.github.io/bb/index1.html">
+    <img src="img/gradientb.png" alt="Data storage preview">
+  </div>
+
+  <div class="image" data-title="Linkedin Logo Rebrand"
+       data-desc="A creative redesign of the iconic LinkedIn logo, modernizing its look while preserving brand essence."
+       data-tags="Adobe illustration,graphic design">
+    <img src="img/linkedinre.png" alt="Linkedin">
+  </div>
+
+  <div class="image" data-title="Video Edit Showcase"
+       data-desc="A polished video edit demonstrating advanced Premiere Pro techniques, blending seamless transitions, effects, and storytelling for a professional finish."
+       data-tags="video editing, Premiere Pro, cinematic effects, transitions, Adobe software, digital media, creative production, post-production, multimedia design, editing skills"
+       data-github=""
+       data-live="">
+      <iframe 
+    src="https://player.vimeo.com/video/1131793672?autoplay=1&muted=1&loop=1&background=1" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  </div>
+
+  <div class="image" data-title="Thumbnail Design Showcase"
+       data-desc="Eye-catching thumbnail designs optimized for social media engagement and visual appeal."
+       data-tags="thumbnail design, graphic design,">
+    <img src="img/thumbss.png" alt="Thumbnail Design Showcase">
+  </div>
+<div class="image certificates"
+     data-title="Certificates"
+     data-desc="Professional certificates"
+     data-tags="Certificates,PDF">
+  
+  <!-- Certificate 1 -->
+  <a href="img/certificate1.pdf" target="_blank">
+    <img src="img/certificate1.png" alt="Certificate 1" class="certificate-img">
+  </a>
+
+  <!-- Certificate 2 -->
+  <a href="img/certificate2.pdf" target="_blank">
+    <img src="img/certificate2.png" alt="Certificate 2" class="certificate-img">
+  </a>
+
+</div>
+</div>
+<div id="contact" class="social-links">
+            <a href="https://github.com/ayub-abduljelil" target="_blank" class="social-link" aria-label="GitHub">
+                <img src="img/github.png" alt="GitHub" class="icon"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ayub-abduljelil-37674528a/overlay/about-this-profile/" target="_blank" class="social-link" aria-label="LinkedIn">
+                <img src="img/linkedin.png" alt="LinkedIn" class="icon"> LinkedIn
+            </a>
+            <a href="https://x.com/AyubAbduljelil" target="_blank" class="social-link" aria-label="Twitter">
+                <img src="img/twitter.png" alt="Twitter" class="icon"> Twitter/X
+            </a>
+            <a href="https://www.instagram.com/ayub_abduljelil/" target="_blank" class="social-link" aria-label="Instagram">
+                <img src="img/instagram.png" alt="Instagram" class="icon"> Instagram
+            </a>
+            <a href="https://www.youtube.com/channel/UCu2wQBGNIp8xGhj_2t2zPtw" target="_blank" class="social-link" aria-label="YouTube">
+                <img src="img/youtube.png" alt="YouTube" class="icon"> YouTube
+            </a>
+        </div>
+  </section>
+  <footer  class="zone yellow">    <div class="footer-content">
+        <p>&copy; 2025 Ayub. All rights reserved.</p>
+        
+    </div>
+ </footer>
+ <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
