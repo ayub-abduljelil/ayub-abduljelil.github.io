@@ -92,8 +92,9 @@ nav.zone.sticky{
   position:fixed;top:20px;left:40%;transform:translateX(-50%);
   width:80%;z-index:30;display:grid;grid-auto-flow:column;gap:12px;
   padding:10px 16px;border-radius:18px;border:1px solid rgba(255,255,255,.12);
-  background:linear-gradient(0deg,rgba(10,20,30,.12),rgba(255,255,255,.5));
+  background:linear-gradient(0deg,rgba(10,20,30,.62),rgba(255,255,255,.5));
   justify-items:center;align-items:center;cursor:pointer;
+  text-shadow: 5px;
 }
 nav.zone.sticky .nav-link{color:#fff;font-size:.95rem;text-decoration:none}
 nav.zone.sticky .nav-link:hover{text-decoration:underline}
